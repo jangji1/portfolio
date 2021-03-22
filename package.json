@@ -1,0 +1,78 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "MODE=local nuxt-ts",
+    "build:local": "MODE=local nuxt-ts build",
+    "start:local": "MODE=local nuxt-ts start",
+    "generate:local": "MODE=local nuxt-ts generate",
+    "generate:dev": "MODE=dev nuxt-ts generate",
+    "generate:pre": "MODE=pre nuxt-ts generate",
+    "generate": "MODE=production nuxt-ts generate",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "test": "jest",
+    "storybook:build": "npx nuxt storybook build -o dist/storybook",
+    "storybook:serve": "npx nuxt storybook -p 6006"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.3",
+    "lodash-es": "^4.17.15",
+    "nuxt": "^2.14.6",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vuex-module-decorators": "^1.0.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/pwa": "^3.3.4",
+    "@nuxtjs/storybook": "^3.3.1",
+    "@types/lodash-es": "^4.17.3",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.5.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^2.1.2",
+    "sass-loader": "^8.0.2",
+    "ts-jest": "^26.4.1",
+    "vue-jest": "^3.0.4"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "bash -c tsc",
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "cssnano": {
+        "safe": true
+      }
+    }
+  }
+}
