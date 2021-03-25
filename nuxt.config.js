@@ -12,7 +12,7 @@ export default {
   target: "static",
 
   router: {
-    base: "/portfolio/",
+    base: "/portfolio/dist/",
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
