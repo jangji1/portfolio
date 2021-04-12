@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002Fportfolio\u002F_nuxt\u002Fstatic\u002F1618195522",layout:"custom",error:null,state:{modules:{about:{category:{categoryNames:[],category:{catgNm:"",pCatgSeq:0}}}}},serverRendered:true,routePath:"\u002Fabout",config:{}};
