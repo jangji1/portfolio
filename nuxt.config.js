@@ -1,32 +1,46 @@
-const path = require("path");
+const path = require('path')
 // nuxt.config.js 내에서 process.env 접근 가능
-require("dotenv").config({
+require('dotenv').config({
   path: path.resolve(__dirname, `.env.${process.env.MODE}`),
-});
+})
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
+  ssr: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
-  target: "static",
+  target: 'static',
 
   router: {
-    base: "/portfolio/",
+    base: '/portfolio/',
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: process.env.VUE_APP_NAME,
+    title: 'G1',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+    ],
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://www.w3schools.com/w3css/4/w3.css',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Lato',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+      },
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ["@/assets/common/scss/common.scss"],
+  css: ['@/assets/common/scss/common.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -37,13 +51,10 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build",
+    '@nuxt/typescript-build',
     // 앱 내에서 process.env 접근 가능
-    [
-      "@nuxtjs/dotenv",
-      { path: __dirname, filename: `.env.${process.env.MODE}` },
-    ],
-    "@nuxtjs/pwa",
+    ['@nuxtjs/dotenv', { path: __dirname, filename: `.env.${process.env.MODE}` }],
+    '@nuxtjs/pwa',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -53,7 +64,7 @@ export default {
     icon: false,
     manifest: false,
     workbox: {
-      enabled: process.env.MODE !== "local",
+      enabled: process.env.MODE !== 'local',
     },
   },
 
@@ -67,8 +78,8 @@ export default {
     },
   },
   server: {
-    host: "0",
+    host: '0',
   },
   telemetry: false,
-  srcDir: "src",
-};
+  srcDir: 'src',
+}

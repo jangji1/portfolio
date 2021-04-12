@@ -1,0 +1,12 @@
+.idea/
+node_modules/
+dist/
+.nuxt/
+.nuxt-storybook/
+src/static/
+.babelrc
+.prettierrc
+nuxt.config.js
+jest.config.js
+*.yml
+sw.*

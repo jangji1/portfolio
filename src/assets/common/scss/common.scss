@@ -1,3 +1,19 @@
 @charset "utf-8";
 
-@import "base";
+@import 'base';
+
+.img {
+  padding: 64px 0;
+  img {
+    border-radius: 5px;
+  }
+}
+.skill-list {
+  dt {
+    margin-top: 10px;
+    font-weight: bold;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
