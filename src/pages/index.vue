@@ -127,7 +127,7 @@
                   <img src="~@/assets/common/img/qna.png" alt="" class="flex-target" />
                 </div>
                 <div class="u-info-project">
-                  <strong class="tit">상품 Q&A 관리 파트너 어드민(PC)</strong>
+                  <strong class="tit">위메프 상품 Q&A 관리 파트너 어드민(PC)</strong>
                   <p class="grade">
                     <span class="start-day">2021.04 ~ 2021.04</span>
                   </p>
@@ -142,7 +142,7 @@
                   <img src="~@/assets/common/img/specialPrice.png" alt="" class="flex-target" />
                 </div>
                 <div class="u-info-project">
-                  <strong class="tit">특가신청 관리 어드민(PC)</strong>
+                  <strong class="tit">위메프 특가신청 관리 어드민(PC)</strong>
                   <p class="grade">
                     <span class="start-day">2021.02 ~ 2021.03</span>
                   </p>
@@ -162,7 +162,7 @@
                     <span class="start-day">2021.01 ~ 2021.02</span>
                   </p>
                   <p class="role">마크업 개발(100%)</p>
-                  <p class="description">위메프 판매자톡(1:1문의) 어드민 서비스<br />신규 구축</p>
+                  <p class="description">판매자톡(1:1문의) 어드민 서비스<br />신규 구축</p>
                 </div>
               </a>
             </li>
@@ -177,7 +177,7 @@
                     <span class="start-day">2021.01 ~ 2021.01</span>
                   </p>
                   <p class="role">마크업 개발(100%)</p>
-                  <p class="description">위메프 판매자톡(1:1문의) 서비스<br />신규 구축</p>
+                  <p class="description">판매자톡(1:1문의) 서비스<br />신규 구축</p>
                 </div>
               </a>
             </li>
