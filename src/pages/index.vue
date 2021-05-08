@@ -114,7 +114,7 @@
                 <div class="u-info-project">
                   <strong class="tit">위메프 여행레저(APP)</strong>
                   <p class="grade">
-                    <span class="start-day">2020.04 ~ 진행중</span>
+                    <span class="start-day">2021.04 ~ 진행중</span>
                   </p>
                   <p class="role">APP 출시 지원 프론트 개발</p>
                   <p class="description">위메프 여행레저 APP 서비스<br />출시</p>
