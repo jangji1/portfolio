@@ -2,6 +2,10 @@
 
 @import 'base';
 
+.w3-top,
+.w3-bottom {
+  z-index: 2;
+}
 .img {
   padding: 64px 0;
   img {
@@ -45,6 +49,7 @@
   }
   .img {
     overflow: hidden;
+    z-index: 1;
     @include flex-box(72%);
     margin-bottom: -8px;
     border-radius: 8px;
@@ -61,6 +66,15 @@
   .description {
     margin: 6px 0;
     color: $dark;
+    .link-txt {
+      border: 0;
+      text-decoration: underline;
+      &:hover {
+        color: inherit;
+        font-weight: bold;
+        box-shadow: none;
+      }
+    }
   }
   .tit {
     display: block;

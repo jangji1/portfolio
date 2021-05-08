@@ -70,6 +70,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    analyze: true,
     loaders: {
       scss: {
         prependData: /* import 순서 주의 */ `

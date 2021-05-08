@@ -11,6 +11,7 @@
     "generate:pre": "MODE=pre nuxt-ts generate",
     "generate": "MODE=production nuxt-ts generate",
     "lint": "eslint --ext .js,.ts,.vue .",
+    "analyze": "nuxt build --analyze",
     "test": "jest",
     "storybook:build": "npx nuxt storybook build -o dist/storybook",
     "storybook:serve": "npx nuxt storybook -p 6006"
