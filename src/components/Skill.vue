@@ -1,5 +1,5 @@
 <template>
-  <div id="skill" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <section id="skill" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-third w3-center">
         <div class="img">
@@ -21,6 +21,8 @@
             <dd>UI Framework(<a href="https://element.eleme.io/#/en-US" target="_blank">Element UI</a>) 경험</dd>
             <dt>VUE.JS</dt>
             <dd>Vue.js, Vuex, Axios, NuxtJS 이용한 웹 프론트 개발</dd>
+            <dt>REACT</dt>
+            <dd>React, redux를 이용한 웹 프론트 개발</dd>
             <dt>ES6+</dt>
             <dd>Babel을 이용한 ES6+ 개발</dd>
             <dt>TYPESCRIPT</dt>
@@ -35,11 +37,13 @@
             <dd>CloudFront + S3 배포</dd>
             <dt>NPM</dt>
             <dd>npm publish 이용한 패키지 배포</dd>
+            <dt>JIRA, Confluence</dt>
+            <dd>협업도구를 사용한 팀 작업</dd>
           </dl>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

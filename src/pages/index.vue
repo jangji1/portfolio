@@ -1,12 +1,8 @@
 <template>
   <div>
-    <!-- Navbar -->
     <navbar />
-    <!-- Header -->
     <Header />
-    <!-- First Grid -->
     <profile />
-    <!-- Second Grid -->
     <skill />
     <project />
     <contact />

@@ -1,5 +1,5 @@
 <template>
-  <div id="project" class="w3-row-padding w3-padding-64 w3-container">
+  <section id="project" class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <h1>PROJECT</h1>
       <div>
@@ -7,27 +7,42 @@
           <li class="item">
             <a href="https://mtour.wd.wemakeprice.com/" target="_blank">
               <div class="img">
+                <img src="~@/assets/common/img/partner.png" alt="" class="flex-target" />
+              </div>
+              <div class="u-info-project">
+                <strong class="tit">위메프 파트너(단독APP)</strong>
+                <p class="grade">
+                  <span class="start-day">2021.06 ~ 진행중</span>
+                </p>
+                <p class="role">프론트 개발 - React</p>
+                <p class="description">위메프 파트너를 위한 배송현황, 상품문의가 포함된 파트너 APP 신규 개발</p>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://mtour.wd.wemakeprice.com/" target="_blank">
+              <div class="img">
                 <img src="~@/assets/common/img/wtour_m.png" alt="" class="flex-target" />
               </div>
               <div class="u-info-project">
-                <strong class="tit">W여행레저(단독APP)</strong>
+                <strong class="tit">W여행컬처(단독APP)</strong>
                 <p class="grade">
                   <span class="start-day">2021.04 ~ 2021.05</span>
                 </p>
-                <p class="role">위메프 여행레저 APP 출시 지원<br />프론트 개발 - VueJS</p>
+                <p class="role">프론트 개발 - VueJS, 웹뷰 대응</p>
                 <p class="description">
-                  위메프 여행레저 APP 서비스 출시<br />
+                  위메프 여행컬처 APP 서비스 출시<br />
                   <a
                     class="link-txt"
                     href="https://play.google.com/store/apps/details?id=com.wemakeprice.wtour&hl=en_US&gl=US"
                     target="_blank"
-                    >W여행레저 (Android)</a
+                    >W여행컬처 (Android)</a
                   >
                   <a
                     class="link-txt"
                     href="https://apps.apple.com/kr/app/w%EC%97%AC%ED%96%89%EB%A0%88%EC%A0%80/id1560127273"
                     target="_blank"
-                    >W여행레저 (IOS)</a
+                    >W여행컬처 (IOS)</a
                   >
                 </p>
               </div>
@@ -208,7 +223,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
