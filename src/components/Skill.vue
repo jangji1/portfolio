@@ -22,7 +22,7 @@
             <dt>VUE.JS</dt>
             <dd>Vue.js, Vuex, Axios, NuxtJS 이용한 웹 프론트 개발</dd>
             <dt>REACT</dt>
-            <dd>React, redux를 이용한 웹 프론트 개발</dd>
+            <dd>React, Redux를 이용한 웹 프론트 개발</dd>
             <dt>ES6+</dt>
             <dd>Babel을 이용한 ES6+ 개발</dd>
             <dt>TYPESCRIPT</dt>

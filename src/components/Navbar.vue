@@ -1,8 +1,8 @@
 <template>
   <nav class="w3-top">
-    <div class="w3-bar w3-amber w3-card w3-left-align w3-large" @click.prevent="onClickNav">
+    <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large" @click.prevent="onClickNav">
       <a
-        class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-amber"
+        class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-light-grey w3-large w3-light-grey"
         href="javascript:void(0);"
         title="Toggle Navigation Menu"
         @click.prevent.stop="isShowNav = !isShowNav"
