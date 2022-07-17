@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jangji1.github.io/portfolio",
   "name": "portfolio-nuxt",
   "version": "1.0.0",
   "private": true,
@@ -7,6 +8,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
@@ -14,6 +17,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
+    "gh-pages": "^4.0.0",
     "nuxt": "^2.15.8",
     "sass": "^1.53.0",
     "sass-loader": "^10.3.1",
