@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@mixin dummy {
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+@mixin clearfix {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin cover_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin flex_box($rate) {
+  position: relative;
+  height: 0;
+  padding-top: $rate;
+  .flex-target {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  img.flex-target {
+    object-fit: cover;
+  }
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clampNum($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+@mixin scrollTouch {
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin u_tb {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@mixin u_td {
+  display: table-cell;
+}
+
+@mixin btn_set($btn_color, $txt_color: true) {
+  border-color: $btn_color;
+
+  @if $txt_color == false {
+    color: #333;
+  } @else {
+    color: $btn_color;
+  }
+}
+
+@mixin is_bg($bg_color, $txt_color: #fff) {
+  background-color: $bg_color;
+  color: $txt_color;
+  border-color: $bg_color;
+}
+
+@mixin midCenterTransform($x, $y) {
+  transform: translate($x, $y);
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin linear-gradient($parameters...) {
+  background: linear-gradient($parameters);
+}
+
+@mixin u-pop-cover($rate) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  transition: background 0.4s cubic-bezier(0, 0, 0.2, 1);
+  z-index: 260;
+
+  .fixed-max-width {
+    height: 100%;
+  }
+  .pop-layer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: $rate;
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transform: translate3d(0, 100%, 0);
+    will-change: transform;
+    transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &.isAnimation {
+    .pop-layer {
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0 0 6px 0 #e4e1dc;
+    }
+  }
+
+  .tit {
+    height: 46px;
+    padding: 15px 15px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    color: $darker;
+    line-height: 18px;
+
+    strong {
+      font-weight: normal;
+    }
+  }
+
+  .pop-cont {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .lst-opt {
+    padding: 7px 0;
+    li {
+      a {
+      }
+    }
+  }
+}

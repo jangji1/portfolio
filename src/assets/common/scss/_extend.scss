@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+%pointGradient {
+  @include linear-gradient(117deg, #a314bf 1%, #d94688);
+}
+
+%round {
+  border-radius: 8px;
+}
+
+%btnFloating {
+  width: 42px;
+  height: 42px;
+  padding: 6px;
+  border-radius: 30px;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+%boxStyle {
+  border-radius: 8px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px #f4f3f1;
+  background-color: #fff;
+}
+
+//상품리스트 내 상품정보
+%smallInfo {
+  .desc {
+    display: none;
+  }
+  .tit {
+    max-height: 36px;
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .open-period {
+    margin-top: 9px;
+  }
+  .u-flag {
+    margin: 15px 0 0;
+    &:empty {
+      height: 16px;
+      display: block;
+    }
+  }
+  .price {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  .grade {
+    display: none;
+  }
+}
+
+%scroll-abled {
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+    max-width: 750px;
+    height: 30px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+    z-index: 10;
+    content: "";
+  }
+}
